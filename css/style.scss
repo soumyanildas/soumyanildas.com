@@ -1,0 +1,177 @@
+::selection {
+  background: #ff294c;
+  color: #fff;
+}
+
+::-moz-selection {
+  background: #ff294c;
+  color: #fff;
+}
+
+* {
+  font-family: 'Roboto Mono';
+}
+
+body {
+  background-color: #16191b;
+  color: #fff;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.page-header {
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    ul {
+      list-style-type: none;
+      display: inline-flex;
+
+      li {
+        a {
+          color: #ff294c;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    .logo {
+      color: #fff;
+    }
+
+  }
+}
+
+.page-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 600px;
+  max-width: 720px;
+  padding: 24px 0px;
+  margin: auto;
+  width: 100%;
+
+  .greetings {
+    width: 100%;
+
+    .greetings-message {
+      font-size: 28px;
+      // font-weight: 300;
+    }
+  }
+
+  .about-me {
+    width: 100%;
+    margin-top: 20px;
+    letter-spacing: 0.5px;
+    font-weight: 300;
+    line-height: 24px;
+
+    a {
+      color: #ff294c;
+      text-decoration: none;
+      font-weight: 500;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  hr {
+    margin-top: 25px;
+    width: 150px;
+    height: 3px;
+    border: 1px solid #ff294c;
+    background-color: #ff294c;
+    border-radius: 5px;
+  }
+
+  .portfolio {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    .portfolio-link-wrapper {
+      display: flex;
+      flex-direction: column;
+
+      .portfolio-website {
+        font-size: 22px;
+      }
+
+      .portfolio-link {
+        font-size: 13px;
+
+        a {
+          color: #ff294c;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    .portfolio-description {
+      margin-top: 10px;
+      letter-spacing: 0.5px;
+      font-weight: 300;
+      line-height: 24px;
+      font-size: 14px
+    }
+  }
+}
+
+.page-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0px;
+  font-size: 14px;
+
+  @media (max-width: 575.98px) {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  ul {
+    list-style-type: none;
+    display: inline-flex;
+
+    @media (max-width: 575.98px) {
+      padding-left: 0;
+    }
+
+    li {
+      a {
+        color: #ff294c;
+        text-decoration: none;
+        margin-left: 15px;
+
+        @media (max-width: 575.98px) {
+          margin-left: 0;
+          margin-right: 15px;
+        }
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
