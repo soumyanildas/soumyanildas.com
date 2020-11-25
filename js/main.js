@@ -5,9 +5,11 @@
     document.getElementById('toggle-box-checkbox').checked = true;
     toggleMode(true);
   }
-  const greetings = ['Hello', 'Hallo', 'Bonjour', 'Olá', 'Hola', 'Namaste', 'Nomoshkar', 'Konnichiwa', 'Ciao'];
-  const random = Math.floor(Math.random() * greetings.length);
-  document.querySelector('.greetings-message').innerHTML = greetings[random];
+  if (document.querySelector('.greetings-message')) {
+    const greetings = ['Hello', 'Hallo', 'Bonjour', 'Olá', 'Hola', 'Namaste', 'Nomoshkar', 'Konnichiwa', 'Ciao'];
+    const random = Math.floor(Math.random() * greetings.length);
+    document.querySelector('.greetings-message').innerHTML = greetings[random];
+  }
 })();
 
 document.getElementById('toggle-box-checkbox').addEventListener('change', function () {
