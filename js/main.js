@@ -1,6 +1,6 @@
 (function () {
-  document.getElementById('toggle-box-checkbox').checked = false;
-  toggleMode(false);
+  document.getElementById('toggle-box-checkbox').checked = true;
+  toggleMode(true);
   if (JSON.parse(localStorage.getItem('dark'))) {
     document.getElementById('toggle-box-checkbox').checked = true;
     toggleMode(true);
