@@ -89,6 +89,11 @@ body {
       font-size: 28px;
       // font-weight: 300;
     }
+
+    .hello {
+      font-size: 28px;
+      margin-left: 15px;
+    }
   }
 
   .title {
@@ -119,6 +124,42 @@ body {
     }
   }
 
+  .work-with {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+
+    .title {
+      width: 100%;
+      font-size: 28px;
+    }
+
+    .my-stack {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      .stack-item {
+        margin-right: 25px;
+        margin-top: 20px;
+
+        img {
+          width: 48px;
+        }
+      }
+
+      .my-sql,
+      .ionic {
+        img {
+          width: 85px;
+        }
+      }
+
+    }
+
+  }
+
   hr {
     margin-top: 25px;
     width: 150px;
@@ -128,39 +169,43 @@ body {
     border-radius: 5px;
   }
 
-  .portfolio {
-    width: 100%;
+  .portfolio-work {
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 
-    .portfolio-link-wrapper {
-      display: flex;
-      flex-direction: column;
+    .portfolio {
+      width: 100%;
+      margin-top: 20px;
 
-      .portfolio-website {
-        font-size: 22px;
-      }
+      .portfolio-link-wrapper {
+        display: flex;
+        flex-direction: column;
 
-      .portfolio-link {
-        font-size: 13px;
+        .portfolio-website {
+          font-size: 22px;
+        }
 
-        a {
-          color: #ff294c;
-          text-decoration: none;
+        .portfolio-link {
+          font-size: 13px;
 
-          &:hover {
-            text-decoration: underline;
+          a {
+            color: #ff294c;
+            text-decoration: none;
+
+            &:hover {
+              text-decoration: underline;
+            }
           }
         }
       }
-    }
 
-    .portfolio-description {
-      margin-top: 10px;
-      letter-spacing: 0.5px;
-      font-weight: 300;
-      line-height: 24px;
-      font-size: 14px
+      .portfolio-description {
+        margin-top: 10px;
+        letter-spacing: 0.5px;
+        font-weight: 300;
+        line-height: 24px;
+        font-size: 14px
+      }
     }
   }
 }
