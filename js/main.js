@@ -35,4 +35,5 @@ setTimeout(() => {
 // disappear after 3.5 seconds
 setTimeout(() => {
   document.querySelector('.buy-me-coffee-text').style.opacity = 0;
+  document.querySelector('.buy-me-coffee-text').style.removeProperty('opacity');
 }, 3500)
