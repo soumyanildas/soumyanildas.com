@@ -27,3 +27,12 @@ function toggleMode(isDark) {
     document.body.classList.add('light');
   }
 }
+
+// show after 500 milliseconds
+setTimeout(() => {
+  document.querySelector('.buy-me-coffee-text').style.opacity = 1;
+}, 500)
+// disappear after 3.5 seconds
+setTimeout(() => {
+  document.querySelector('.buy-me-coffee-text').style.opacity = 0;
+}, 3500)

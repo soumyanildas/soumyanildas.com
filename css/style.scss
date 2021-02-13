@@ -366,3 +366,55 @@ body {
     font-weight: bold;
   }
 }
+
+.buy-me-coffee-widget {
+  position: fixed;
+  bottom: 50px;
+  right: 18px;
+
+  .buy-me-coffee {
+    background-color: #ff294c;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    display: flex;
+
+    .coffee-cup {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      outline: 0;
+
+      &:hover+.buy-me-coffee-text {
+        opacity: 1;
+      }
+
+      img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+    .buy-me-coffee-text {
+      opacity: 0;
+      position: fixed;
+      width: auto;
+      max-width: 260px;
+      bottom: 50px;
+      right: 100px;
+      background-color: #fff;
+      color: #ff294c;
+      border-radius: 5px;
+      font-size: 18px;
+      line-height: 1.5;
+      box-shadow: rgba(13, 12, 34, 0.1) -6px 0px 30px;
+      padding: 23px 24px;
+      -webkit-transition: opacity 500ms ease;
+      -moz-transition: opacity 500ms ease;
+      -o-transition: opacity 500ms ease;
+      transition: opacity 500ms ease;
+    }
+
+  }
+}
