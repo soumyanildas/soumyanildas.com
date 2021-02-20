@@ -29,11 +29,14 @@ function toggleMode(isDark) {
 }
 
 // show after 500 milliseconds
-setTimeout(() => {
-  document.querySelector('.buy-me-coffee-text').style.opacity = 1;
-}, 500)
-// disappear after 3.5 seconds
-setTimeout(() => {
-  document.querySelector('.buy-me-coffee-text').style.opacity = 0;
-  document.querySelector('.buy-me-coffee-text').style.removeProperty('opacity');
-}, 3500)
+if (!JSON.parse(localStorage.getItem('isFirstTime'))) {
+  setTimeout(() => {
+    document.querySelector('.buy-me-coffee-text').style.opacity = 1;
+  }, 500)
+  // disappear after 3.5 seconds
+  setTimeout(() => {
+    localStorage.setItem('isFirstTime', 'true');
+    document.querySelector('.buy-me-coffee-text').style.opacity = 0;
+    document.querySelector('.buy-me-coffee-text').style.removeProperty('opacity');
+  }, 3500)
+}
