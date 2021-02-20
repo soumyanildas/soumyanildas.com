@@ -57,17 +57,7 @@ body {
     .logo {
       margin-top: 14px;
       font-size: 32px;
-
-      &.dark {
-        color: #fff;
-      }
-
-      &.light {
-        color: #000;
-      }
     }
-
-
   }
 }
 
@@ -187,6 +177,7 @@ body {
 
         .portfolio-link {
           font-size: 13px;
+          color: #ff294c;
 
           a {
             color: #ff294c;
@@ -197,15 +188,51 @@ body {
             }
           }
         }
+
+        .portfolio-stack-wrapper {
+          display: flex;
+
+          @media (max-width: 575.98px) {
+            flex-wrap: wrap;
+          }
+
+
+          .stack-name {
+            margin-top: 15px;
+            margin-right: 10px;
+            border: 1px solid #ff294c;
+            padding: 10px;
+            font-size: 13px;
+            cursor: pointer;
+
+            @media (max-width: 575.98px) {
+              padding: 8px;
+              font-size: 12px;
+            }
+
+
+            &:hover {
+              background-color: #ff294c;
+            }
+          }
+        }
       }
 
       .portfolio-description {
-        margin-top: 10px;
+        margin-top: 15px;
         letter-spacing: 0.5px;
         font-weight: 300;
         line-height: 24px;
         font-size: 14px
       }
+    }
+  }
+}
+
+.light {
+  .stack-name {
+    &:hover {
+      color: #fff;
     }
   }
 }

@@ -1,9 +1,9 @@
 (function () {
   document.getElementById('toggle-box-checkbox').checked = true;
   toggleMode(true);
-  if (JSON.parse(localStorage.getItem('dark'))) {
-    document.getElementById('toggle-box-checkbox').checked = true;
-    toggleMode(true);
+  if (!JSON.parse(localStorage.getItem('dark'))) {
+    document.getElementById('toggle-box-checkbox').checked = false;
+    toggleMode(false);
   }
   if (document.querySelector('.greetings-message')) {
     const greetings = ['Hello', 'Hallo', 'Bonjour', 'Olá', 'Hola', 'Namaste', 'Nomoshkar', 'Konnichiwa', 'Ciao'];
