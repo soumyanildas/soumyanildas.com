@@ -1,10 +1,10 @@
 ::selection {
-  background: #ff294c;
+  background: #e22443;
   color: #fff;
 }
 
 ::-moz-selection {
-  background: #ff294c;
+  background: #e22443;
   color: #fff;
 }
 
@@ -13,14 +13,36 @@
 }
 
 body {
+  height: 100vh;
+
   &.light {
     background-color: #fff;
     color: #000;
+
+    .menu-item {
+      color: #000;
+    }
+
+    .logo {
+      a {
+        color: #000;
+      }
+    }
   }
 
   &.dark {
     background-color: #000;
     color: #fff;
+
+    .menu-item {
+      color: #fff;
+    }
+
+    .logo {
+      a {
+        color: #fff;
+      }
+    }
   }
 }
 
@@ -44,7 +66,7 @@ body {
 
       li {
         a {
-          color: #ff294c;
+          color: #e22443;
           text-decoration: none;
 
           &:hover {
@@ -57,6 +79,22 @@ body {
     .logo {
       margin-top: 14px;
       font-size: 32px;
+
+      a {
+        text-decoration: none;
+      }
+    }
+
+    .right-menu {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      .menu-item {
+        margin-right: 30px;
+        margin-top: -15px;
+        text-decoration: none;
+      }
     }
   }
 }
@@ -66,7 +104,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 600px;
+  // min-height: 600px;
   max-width: 720px;
   padding: 24px 0px;
   margin: auto;
@@ -99,12 +137,12 @@ body {
     line-height: 24px;
 
     .highlight {
-      color: #ff294c;
+      color: #e22443;
       font-weight: 500;
     }
 
     a {
-      color: #ff294c;
+      color: #e22443;
       text-decoration: none;
       font-weight: 500;
 
@@ -154,9 +192,43 @@ body {
     margin-top: 25px;
     width: 150px;
     height: 3px;
-    border: 1px solid #ff294c;
-    background-color: #ff294c;
+    border: 1px solid #e22443;
+    background-color: #e22443;
     border-radius: 5px;
+  }
+
+  .portfolio-experience {
+
+    .portfolio {
+      width: 100%;
+      margin-top: 20px;
+
+      .portfolio-title {
+        font-size: 22px;
+      }
+
+      .portfolio-company {
+        color: #e22443;
+      }
+
+      .portfolio-period {
+        font-size: 13px;
+      }
+
+      .portfolio-description {
+        margin-top: 15px;
+        letter-spacing: 0.5px;
+        font-weight: 300;
+        line-height: 24px;
+        font-size: 14px
+      }
+
+      .portfolio-description-list {
+        list-style-type: '- ';
+      }
+
+    }
+
   }
 
   .portfolio-work {
@@ -177,10 +249,10 @@ body {
 
         .portfolio-link {
           font-size: 13px;
-          color: #ff294c;
+          color: #e22443;
 
           a {
-            color: #ff294c;
+            color: #e22443;
             text-decoration: none;
 
             &:hover {
@@ -200,7 +272,7 @@ body {
           .stack-name {
             margin-top: 15px;
             margin-right: 10px;
-            border: 1px solid #ff294c;
+            border: 1px solid #e22443;
             padding: 10px;
             font-size: 13px;
             cursor: pointer;
@@ -212,7 +284,7 @@ body {
 
 
             &:hover {
-              background-color: #ff294c;
+              background-color: #e22443;
             }
           }
         }
@@ -227,6 +299,38 @@ body {
       }
     }
   }
+
+  .uses-list {
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+    .title {
+      width: 100%;
+      font-size: 28px;
+    }
+
+    .uses-subsection {
+      width: 100%;
+      margin-top: 20px;
+
+      .uses-subtitle {
+        width: 100%;
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      .uses-sublist {
+        li {
+          margin-top: 5px;
+          letter-spacing: 0.5px;
+          font-weight: 300;
+          line-height: 24px;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
 }
 
 .light {
@@ -259,7 +363,7 @@ body {
 
     li {
       a {
-        color: #ff294c;
+        color: #e22443;
         text-decoration: none;
         margin-left: 15px;
 
@@ -400,7 +504,7 @@ body {
   right: 18px;
 
   .buy-me-coffee {
-    background-color: #ff294c;
+    background-color: #e22443;
     width: 64px;
     height: 64px;
     border-radius: 50%;
@@ -431,7 +535,7 @@ body {
       bottom: 50px;
       right: 100px;
       background-color: #fff;
-      color: #ff294c;
+      color: #e22443;
       border-radius: 5px;
       font-size: 18px;
       line-height: 1.5;
